@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gxu.newTbvp.mapper.RouteMapper" >
+  <resultMap id="BaseResultMap" type="com.gxu.newTbvp.entity.Route" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="route_id" property="routeId" jdbcType="INTEGER" />
+    <result column="route_name" property="routeName" jdbcType="VARCHAR" />
+    <result column="route_time" property="routeTime" jdbcType="VARCHAR" />
+    <result column="route_price" property="routePrice" jdbcType="VARCHAR" />
+    <result column="route_start" property="routeStart" jdbcType="VARCHAR" />
+    <result column="route_stop" property="routeStop" jdbcType="VARCHAR" />
+    <result column="route_citys" property="routeCitys" jdbcType="VARCHAR" />
+    <result column="route_img" property="routeImg" jdbcType="VARCHAR" />
+    <result column="route_desc" property="routeDesc" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <select id="getRoute" resultType="com.gxu.newTbvp.entity.Route" >
+    select * from route where route_id = 100000
+  </select>
+
+
+</mapper>
