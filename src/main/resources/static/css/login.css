@@ -1,0 +1,149 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background:url(../img/18.jpg) no-repeat;
+	background-size:cover;
+}
+.wrap{
+	width: 600px;
+	height:376px;
+	margin: 50px auto;
+}
+.wrap .logo{
+	display: block;
+	width:74px;
+	height:65px;
+	background:url(../img/logo-new.png) no-repeat 0px 0px;
+    margin: 0 auto;
+}
+.container{	
+	background: #fff;
+	border-radius:4px;
+	padding:35px 27px 30px;
+	box-sizing: border-box;	
+	margin-top: 24px;		
+}
+.clearFiexd{
+	zoom:1;
+}
+.clearFiexd::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.left{
+	float:left;
+	width: 350px;
+	border-right:1px solid #ccc;
+}
+.left input{
+	border:1px solid #d8d8d8;
+	width:320px;
+	height:40px;
+	padding-left:13px;
+	margin-bottom: 10px;
+	border-radius:4px;
+	box-sizing: border-box;
+	outline:none;
+}
+.left .forget{
+	display: block;
+	width: 320px;
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 13px;
+	color: #FF9D00;
+}
+.left .btn{
+	background:#FF9D00;
+	color: white;
+	border: none;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer;	
+	margin-bottom: 30px;
+}
+.bottom{
+	padding-top: 16px;
+	border-top:1px solid #ccc;
+}
+.right{
+	float:right;
+	text-align: center;
+	
+}
+.right img{
+	width:180px;
+	margin-bottom:20px;
+}
+p{
+	color: #797979;
+	font-size: 13px;
+	margin-bottom:3px;
+}
+.bottom a{
+	display: inline-block;
+	width: 54px;
+	color: #797979;
+	font-size: 13px;	
+	text-align: center;
+	margin-right:20px;
+}
+span{
+	display:inline-block;
+	height:42px;
+	width:42px;
+	background:url(../img/c_icon3.gif) no-repeat;
+	margin-top:20px;
+}
+.qq{
+	background-position: -42px 0px;
+}
+.wechat{
+	background-position: -294px 0px;
+}
+.forget:hover{
+	text-decoration: underline;
+}
+.already{
+	width:140px;
+	height:24px;
+	border-radius:12px;
+	background:rgba(0,0,0,0.5);
+	margin:10px auto;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+}
+.already a{
+	margin-left: 10px;
+	color:#FF9D00;
+	text-decoration: none;
+}
+.deal{
+	width:320px;
+	text-align: right;
+	margin:-20px 0px 30px;
+	font-size: 12px;
+	color: #dbdbdb;
+}
+.deal a{
+	color: #6E6E6E;
+	text-decoration:none;
+}
+.deal a:hover,.tip a:hover,.already a:hover{
+	text-decoration: underline;
+}
+.tip{
+	position:fixed;
+	bottom:10px;
+	right: 10px;
+}
+.tip a{
+	color: #ccc;
+	text-decoration: none;
+	font-size: 12px;
+}

@@ -1,0 +1,164 @@
+.subTop{
+	margin: 0 auto;
+	width: 1000px;
+}
+.top-pic{
+	width: 100%;
+	height:0px;
+	position: relative;
+	padding-bottom:20.8% ;
+}
+.change-pic{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.top-pic img{
+	width: 100%;
+}
+.change-pic .active{
+	display: block;
+}
+.change-pic li{
+	width: 100%;
+	display: none;
+}
+.top-pic .round{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -58.5px;
+}
+.round li{
+	float: left;
+	margin-right: 24px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: white;
+}
+.round .current{
+	background: #FC9D27;
+}
+.scree .desc{
+	border: none;
+}
+.desc span{
+	float: left;
+	width: 27px;
+	height: 27px;
+	margin-top: 14px;
+	margin-right: 10px;
+	background: url(../img/index-sprite.png) no-repeat -148px -83px;
+}
+.scree{
+	position: relative;
+	width: 1000px;
+    margin: 0 auto 50px;
+}
+.desc{
+	margin-bottom: 10px;
+	height: 50px;
+	border-bottom: 2px solid #F1F1F1;
+}
+.desc h3{
+	float: left;
+	padding-top: 13px;
+	font-size: 24px;
+	color: #333;
+}
+.desc small{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #999999;
+}
+.pic li{
+	float: left;
+	position: relative;
+	margin-right: 16px;
+	margin-bottom:20px;
+    border: 1px solid #d8d8d8;
+	width: 238px;
+	height: 234px;
+	box-sizing: border-box;	
+}
+.pic li:nth-of-type(4n){
+	margin-right:0px;
+}
+.pic li img{
+	width: 237px;
+	margin-bottom: -3px;
+}
+.pic li:hover{
+	box-shadow: 3px 3px 3px #d8d8d8;
+}
+.desc-info{
+	position: absolute;
+	left: 10px;
+	bottom: 70px;
+	font-size: 18px;
+	color: white;
+}
+.desc-info b{
+	color: #ff8a00;
+	font-weight: normal;
+}
+.price{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 20px;
+	width: 100%;
+}
+.price b{
+	float: right;
+	font-size: 18px;
+	margin-right: 10px;
+	color: #ff8a00;
+}
+.price b small{
+	font-size: 12px;
+	color: #999999;	
+}
+.price span{
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #999999;	
+	margin-top: 4px;
+}
+.bgcolor{
+	background:#f8f8f8;
+	width: 100%;
+}
+.desc span.spirit2{
+	height: 36px;
+    background-position: -153px -117px;
+}
+.sbottom{
+	padding: 15px 45px;
+	border: 1px solid #d8d8d8;
+	color: #BDBDBD;
+	font-size: 14px;
+	box-sizing: border-box;
+	position: relative;
+}
+.spirit3{
+	float: left;
+	margin-right: 20px;
+	width: 42px;
+	height: 42px;
+	background: url(../img/index-sprite.png) no-repeat -17px -192px;
+}
+.sbottom p{
+	float: left;
+	width: 820px;
+}
+.sbottom b{
+	color:#ff9d00;
+    font-size:20px;
+    font-weight: normal;
+}
+.sbottom a{
+	text-decoration: underline;
+}

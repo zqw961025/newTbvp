@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gxu.newTbvp.mapper.SceneMapper" >
+  <resultMap id="BaseResultMap" type="com.gxu.newTbvp.entity.Scene" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="scene_id" property="sceneId" jdbcType="INTEGER" />
+    <result column="scene_name" property="sceneName" jdbcType="VARCHAR" />
+    <result column="scene_desc" property="sceneDesc" jdbcType="VARCHAR" />
+    <result column="scene_city" property="sceneCity" jdbcType="VARCHAR" />
+    <result column="scene_level" property="sceneLevel" jdbcType="VARCHAR" />
+    <result column="scene_price" property="scenePrice" jdbcType="VARCHAR" />
+    <result column="scene_place" property="scenePlace" jdbcType="VARCHAR" />
+    <result column="scene_img" property="sceneImg" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <select id="getScene" resultType="com.gxu.newTbvp.entity.Scene" >
+    select * from scene where scene_id = 100000
+  </select>
+
+
+</mapper>

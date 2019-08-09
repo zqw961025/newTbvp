@@ -1,0 +1,364 @@
+
+.bannerImg{
+	display: block;
+	width: 1000px;
+	margin:3px auto;
+}
+.wrap{
+	width:1000px;
+	margin:0 auto;
+	padding-top:60px;
+	font-size:23px;
+	padding-left:8px;
+	box-sizing:border-box;
+	padding-bottom: 112px;
+	position:relative;
+}
+.search-tab{
+	margin: 40px 0px 70px;
+	height:47px;
+	position:relative;
+}
+.addTravle,.addDate,.addPeople{
+	float:left;
+	margin-right:10px;
+	position:relative;
+}
+.addPeople{
+	margin-right:9px;
+	position: relative;
+}
+.search-tab input,.addDest{
+	border-radius:5px;
+	border:1px solid #999999;
+	box-sizing:border-box;	
+	outline:none;
+}
+.search-tab input{
+	width:185px;
+	height:46px;	
+	padding-left:10px;
+	font-size:16px;		
+}
+.addDest{
+	width:725px;
+	position:absolute;
+	top:46px;
+	left:0px;
+	background:#fff;
+	z-index: 2;
+    padding:25px 10px 0px 10px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.1);
+	display: none;
+	cursor: pointer;
+}
+.addDest ul li{
+	margin-bottom: 10px;
+}
+.clearFiexd{
+	zoom:1;
+}
+.clearFiexd::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.addDest h4{
+	float:left;
+	color:#666666;
+    font-weight:bold;
+    padding-left: 10px;
+  	width:48px;
+    font-size:14px;
+}
+.addDest ul li div{
+	float:left;
+	width:632px;
+	padding-top: 0px;
+	margin-top:-9px;
+	margin-left: 13px;
+}
+.addDest div a{
+	display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width:92px;
+    color: #666;
+}
+.addDest div a:hover{
+	color:#FF9D00;
+}
+.search-tab .dest{
+	width: 352px;
+}
+.search-tab button{
+	width: 46px;
+	height:46px;
+	background:#FF9D00;
+	border:none;
+	border-radius:5px;
+	vertical-align: top;
+}
+.search-tab .calendar{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/header-sprites13.png) no-repeat 0px -139px;
+	position: absolute;
+	top:50%;
+	margin-top:-9px;
+	right:10px;
+}
+.search-tab span.cal{
+	background:url(../img/header-sprites13.png) no-repeat 0px -139px;
+}
+.search-tab .people{
+	position: absolute;
+	display:inline-block;
+	width:13px;
+	height:16px;
+	background:url(../img/hotel-detail-icon7.png) no-repeat -71px -140px;
+	top:15px;
+	right:8px;
+}
+.search-tab span.sea{
+	background-position:0px -110px;
+	right:10px;
+	top:20px;
+	width: 24px;
+	height:24px;
+}
+.addNum{
+	position: absolute;
+	right: 0px;
+    z-index: 99;
+    margin-top: -1px;
+    border: 1px solid #ffa800;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #ffa800;
+    background-color: #fff;
+    padding: 0 15px;
+    width: 480px;
+    font-size: 12px;
+    color:  #898989;
+    display: none;
+}
+.personMsg>div{
+	margin-top: 10px;
+	height:30px;
+	line-height: 30px;
+}
+.personMsg span{
+	display:inline-block;
+	width: 48px;
+	float: left;
+}
+.personMsg .duty{
+	float: left;
+	width: 90px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	line-height: 30px;
+	padding-left: 10px;
+	margin-left: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.duty .icon-down{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+    border-top: 4px solid #999;
+    border-left: 4px dashed transparent;
+    border-right: 4px dashed transparent;
+    position: absolute;
+    right: 7px;
+    top: 13px;  
+}
+.duty .Line{
+	width: 5px;
+	position: absolute;
+	right: 20px;
+}
+.duty ul{
+	border: 1px solid #c6c6c6;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	top: 28px;
+	left: 0px;
+	border-radius: 4px;
+	z-index: 33;
+	display: none;
+}
+.duty .childAges{
+	height: 198px;
+	overflow: auto;  
+}
+.duty ul li{
+	padding: 0px 15px;
+}
+.confirm{
+	margin: 20px 0px;
+	padding-top: 20px ;
+	border-top: 1px solid #ccc;
+}
+.confirm a{
+	float: right;
+	width: 76px;
+	height: 28px;
+	line-height: 28px;
+	color: white;
+	text-align: center;
+	background: #ffa800;
+	border-radius: 4px;
+}
+.confirm .tips{
+	color: #f00;
+}
+.Icon{
+	font-size:18px;
+	overflow:hidden;
+}
+.Icon ul li{
+	float:left;
+	color: #999;
+	font-weight:normal;
+	margin-right:140px;
+	width: 222px;
+}
+.Icon ul li:last-child{
+	margin-right:0px;	
+}
+.Icon ul li p{
+	font-size:12px;
+	margin-top:10px;
+}
+.Icon ul li span{
+	width:35px;
+	height:42px;
+	float:left;
+	background:url(../img/hotel-sprites1.png) no-repeat 0px 0px;
+	margin: 10px 13px 0px 0px;
+}
+.Icon ul li span.sug{
+	width: 43px;
+	background-position:-84px 0px;
+}
+.Icon ul li span.price{
+	width: 42px;
+	background-position:-40px 0px;
+	margin-right: 10px;
+}
+.theme h4{
+	text-align:center;
+	margin:40px 0px 25px 0px;
+	color: #333333;
+}
+.theme .title-list,.theme .sale-list{
+	border-bottom:1px solid #e4e4e4;
+}
+.theme .title-list li,.theme .sale-list li{
+	width:165px;
+	text-align:center;
+	height:50px;
+	line-height:50px;
+	float:left;
+	color:#999;
+	font-size:18px;	
+	cursor:pointer;
+}
+.theme .title-list .active,.theme .sale-list .active{
+	border-bottom:3px solid #FF9D00;
+	color: #FF9D00;
+}
+.theme .img-list,.theme .city-list{
+     display: none;
+     width:1000px;
+}
+.theme ul::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.theme .img-list li img:hover{
+	margin-top: -10px;
+    box-shadow: 1px 3px 15px 1px #888888;
+}
+.theme .img-list li,.theme .city-list li{
+	width: 318px;
+	height:240px;
+	float:left;
+	margin:20px 23px 0px 0px;
+	position:relative;
+	cursor:pointer;
+}
+.theme .img-list li:nth-of-type(3n){
+	margin-right:-8px;
+}
+.theme .img-list li img,.theme .city-list li img{
+	width:100%;
+	height:100%;	
+	position: relative; 
+	/*box-shadow: 0px 0px 10px 1px rgba(0,0,0,.3);*/
+}
+.country {
+	height:60px;
+	width:318px;
+	position: absolute;
+	top: 50%;
+    margin-top: -30px;
+	font-size:16px;
+	text-align:center;
+	z-index:1;
+	color:#FFF;
+}
+.country h2{
+	font-size:26px;
+}
+.theme .current{
+	display:block;
+}.sale{
+	margin-top: 100px;
+	color: #333333;
+}
+.sale .city-list li{
+	width:240px;
+	height:240px;
+	margin-right:13px;
+}
+.sale .city-list li:nth-of-type(3n){
+	margin-right:13px;
+}
+.sale .city-list li:nth-of-type(4n){
+	margin-right:0px;
+}
+.theme .city {
+	width: 240px;
+	height:240px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding: 14px 13px;	
+	color: white;
+	font-size:14px;
+	box-sizing: border-box;
+}
+.theme .city h2{
+	text-align: center;
+	line-height:25px;
+	width:55px;
+	height:25px;
+    font-size:18px;
+    background: rgba(0,0,0,0.5);
+    border-radius:5px;
+}
+.theme .city p{
+	margin-top: 156px;
+	padding-right: 13px ;
+}
+.twokkk{
+	bottom: 630px;
+}

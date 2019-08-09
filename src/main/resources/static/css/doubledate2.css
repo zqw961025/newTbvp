@@ -1,0 +1,14 @@
+.kui_data_content_pane {
+	border: 1px solid #ff9900;
+	width: 370px;
+	overflow: hidden;
+	font-size: 12px;
+	position: absolute;
+/*	left: 0;*/
+    left: -172px;
+	z-index: 100;
+	/*top:-62px;*/
+	top:-184px;
+	background: #fff;
+	height: 225px;
+}

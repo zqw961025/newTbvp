@@ -1,0 +1,171 @@
+
+.wrap{
+	width:1000px;
+	margin: 0 auto;
+	height:780px;
+	margin-top: 3px;
+	position: relative;
+}
+.clearFiexd{
+	zoom:1;
+}
+.clearFiexd::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.banner{
+	position: relative;
+	float: left;
+	width: 850px;
+	height:407px;
+	background: url(../img/bn_bg2.gif) no-repeat;
+}
+.rightAside{
+	float:left;
+	margin-left:20px;
+}
+.rightAside ul li{
+	margin-top:5px;
+	text-align: center;
+}
+.rightAside ul li.pic{
+	margin-bottom: 10px;
+	width:107px;
+	height:86px;
+	background:url(../img/images/app_n_sprite5.gif) no-repeat -224px -164px;
+}
+.rightAside img{
+	margin: 8px 0px 0px 18px;
+}
+.preview{
+	width: 204px;
+	margin:85px 0px 0px 30px ;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	transition:all 2s; 
+}
+.previewBg{
+	width:204px;
+	height: 424px;
+	background: url(../img/images/app_n_sprite5.gif) no-repeat ;
+}
+.banner .btnList {
+	width:100px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.banner .btnList li{
+	float: left;
+	width:11px;
+	height:11px;
+	background:#bdbcbd;
+	border-radius:50%;
+	margin-right:8px;
+}
+.banner .btnList .active{
+	background: #FF9D00;
+}
+.banner .imgList{
+	width: 9999px;
+	position: relative;
+}
+.banner .imgList li{
+	float: left;
+	z-index: -2;
+    margin: 63px 0px 0px 17px;
+}
+.scanCode{
+	margin-top: 10px;
+	color: #666;
+	text-align: center;
+}
+.download {
+	width: 610px;
+	height: 300px;
+    margin: 409px 0px 0px 234px;
+    padding: 24px 0px 0px 30px;
+    box-sizing:border-box;
+    color: #666666;
+}
+.download-list>li{
+	float: left;
+	position: relative;
+}
+.download-list>li .dd{
+	display: inline-block;
+	width:125px;
+	height:42px;     
+	background: url(../img/images/app_n_sprite5.gif) no-repeat;
+    margin-right:11px;
+}
+.download-list>li a.iphone{
+	background-position:-224px 0px;
+}
+.download-list>li a.iphoneHd{
+	background-position:-384px 0px;
+}
+.download-list>li a.android{
+	background-position:-546px 0px;
+}
+.download-list>li a.window{
+	background-position:-706px 0px;
+	width: 155px;
+	margin-right:0px;
+}
+.download h3{
+	margin-top:-219px;
+	margin-bottom: 20px;
+	font-size:22px;
+	font-weight:bold;
+}
+.download p{
+	line-height: 26px;
+	font-size: 14px;
+}
+.downloadLink {
+	position: absolute;
+	width:125px;
+	border: 1px solid #cccc;
+	background: #fff;
+	text-align: center;
+	display: none;
+	border-bottom: none;
+}.downloadLink  li {
+	border-bottom:1px solid #ccc;
+	padding: 10px 0px;
+}
+.downloadLink  li a{
+	color: #666666;
+}
+.downloadLink  li a:hover{
+	text-decoration: underline;
+}
+.rightbg{
+	float: left;
+	width:600px;
+	height: 407px;
+	position: relative;
+}
+.rightbg img{
+	position: absolute;
+	left: 164px;
+	top:120px ;
+}
+.rightbg .iconPic{
+	margin-top:30px;
+	margin-left: 30px;
+	position: relative;
+}
+.logoBg{
+	position: absolute;
+	bottom:163px;
+	right:36px;
+	width: 144px;
+	height:40px;
+	background: url(../img/images/glbn_bg3.png) no-repeat -418px -168px;
+}
+.one{
+	transform:scale(0.1) translateY(-85px);
+}

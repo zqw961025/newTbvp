@@ -1,0 +1,51 @@
+.message a:hover{
+	color:#fb8b00;
+	text-decoration:underline;
+}.img-list a:hover{
+	color:#fb8b00;
+	text-decoration:underline;
+}.message .post:hover{
+	color:#fb8b00;
+	text-decoration:none;
+}.message .post:hover em{
+	color:#fb8b00;
+}
+.message .newDevelop:hover{
+	color: #666666;	
+}
+.hotNodes ul li a:hover{
+	color: #FF9D00;;
+}
+.hotNodes ul li span:hover{
+	background:#ff9d00;
+	color:white;
+	border:1px solid transparent;
+	cursor:pointer;
+}
+.hotNodes ul li span:hover i{
+	background:url(../img/index-sprites9.png) no-repeat 0px -140px;
+}
+.writeNodes:hover{
+	background: #FF8A00;
+}
+.travelContent li:hover {	
+	background:#f8f8f8;
+	/*padding: 15px;
+	margin:0 -15px;*/
+}
+.travelContent li:hover dt{
+	color:#ff9d00;
+}
+.title a:hover{
+	text-decoration: underline;
+}
+footer a:hover{
+	color: white;
+}
+.searchDst .city a:hover{
+	color:#ff9d00;
+}
+.writeBtn:hover{
+	background:#ff8a00;
+	cursor:pointer;
+}

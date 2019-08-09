@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	list-style: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+body{
+	overflow-x: hidden;
+}
+/*版心*/
+.zyx{
+	overflow: hidden;
+	width: 1000px;
+	margin: auto;
+	padding: 10px 0;
+	position: relative;
+}
+/*左部div*/
+.zyx-l{
+	float: left;
+	width: 680px;
+	position: relative;
+}
+.left-title{
+	padding: 20px 0 0 0;
+	border-bottom: 1px solid #E3E3E3;
+}
+.left-title h1{
+	margin: 10px 0;
+}
+.left-title a{
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 1px;
+}
+.left-title a:nth-of-type(3){
+	color: #FFA800;	
+}
+.left-title a:nth-of-type(1):hover,
+.left-title a:nth-of-type(2):hover{
+	text-decoration: underline;
+}
+.left-title2{
+	margin: 10px 0 30px 0;
+	overflow: hidden;
+}
+.left-title2 span{
+	float: left;
+	margin: 0 5px;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/list_sprites7.png) no-repeat -35px -59px;
+}
+.left-title2 p{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.left-title2 small{
+	float: right;
+	display: inline-block;
+	margin: 0 7px;	
+	color: #999;
+}
+.author{
+	overflow: hidden;
+	width: 650px;
+	padding: 10px;
+	height: 99px;
+	border: 1px solid #E3E3E3;
+}
+.author img{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
+.pic{
+	float: left;
+	margin-right: 20px;
+}
+.zyx-person{
+	float: left;
+	width: 420px;
+}
+.zyx-person span{
+	display: inline-block;
+	margin-bottom: -4px;
+	width: 22px;
+	height: 22px;
+	background: url(../img/list_sprites7.png) no-repeat -100px -40px;
+}
+.zyx-talk{
+	float: left;
+	width: 100px;
+	height: 96px;
+	margin-left: 5px;
+	border-left: 1px solid #E3E3E3;
+}
+.zyx-talk span{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	width: 40px;
+	height: 33px;
+	background: url(../img/list_sprites7.png) no-repeat 3px -63px;
+	background-size: 550%;
+}
+.zyx-talk p{
+	width: 120px;
+	text-align: center;
+	color: #333333;
+	padding: 12px 0;
+	font-size: 14px;
+}
+
+/*正文内容*/
+.txt-audio span{
+	width: 20px;
+    height: 18px;
+    background: url(../img/list_sprites7.png) no-repeat -10px -25px;
+    display: inline-block;
+    margin-right: 10px;	
+}
+.txt-audio p{
+	font-size: 16px;
+    color: #333;
+    line-height: 26px;
+}
+.zyx-txt h2{
+	font-size: 24px;
+    color: #333;
+    margin: 18px 0;
+    font-weight: bold;
+}
+.tips{
+	margin: 35px 0;
+    border: 1px solid #ffe3b7;
+    background-color: #fff5e5;
+    padding: 15px 20px;
+    line-height: 26px;
+    color: #333;
+    
+}
+.tips b{
+	font-weight: bold;
+	font-size: 14px;
+}
+.tips p{
+	font-size: 14px;
+}
+section h3{
+	margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+section p,section b{
+	font-size: 14px;
+	color: #666;
+	line-height: 26px;
+}
+section b{
+	font-weight: bold;
+}
+section img{
+	margin: 30px 0 10px 0;
+	width: 100%;
+}
+section small{
+	display: block;
+	color: #999999;
+	margin-bottom: 20px;
+}
+section h1{
+	font-weight: bold;
+	margin: 20px 0;
+}
+section sup{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.adver{
+	margin: 30px 0 ;
+	padding: 20px;
+	overflow: hidden;
+	border: 1px solid #E3E3E3;
+}
+.adver img{
+	float: left;
+}
+.adver p{
+	float: left;
+	width: 65%;
+	margin-left: 15px;
+	color: #999999;
+}
+/*右部div*/
+.zyx-r{
+
+	width: 275px;
+	float: right;
+
+}
+.nav-rti{
+	overflow: hidden;
+}
+.nav-rti li{
+	float: left;
+	width: 68px;
+
+}
+.nav-rti li span{
+	display: block;
+	margin: auto;
+	width: 28px;
+	height: 28px;
+}
+.nav-rti li:nth-of-type(1) span{
+	background: url(../img/list_sprites01.png) no-repeat 0px 0px;
+}
+.nav-rti li:nth-of-type(2) span{
+	background: url(../img/list_sprites01.png) no-repeat -65px 0px;
+}
+.nav-rti li:nth-of-type(3) span{
+	background: url(../img/list_sprites01.png) no-repeat -135px 0px;
+}
+.nav-rti li:nth-of-type(4) span{
+	background: url(../img/list_sprites01.png) no-repeat -200px 0px;
+}
+
+.nav-rti p{
+	width: 68px;
+	text-align: center;
+}
+
+.nav-nlist{
+	border-left: 1px solid #E3E3E3;
+}
+
+.nav-list h3{
+	display: block;
+	margin: 40px 0 10px 0;
+}
+.nav-nlist li{
+	margin: 10px 0 10px 20px;
+}
+.nav-nlist li b{
+	font-size: 16px;
+	color: #333;
+}
+.nav-nlist li a{
+	font-size: 14px;
+	color: #666;
+	cursor: pointer;
+}
+.nav-nlist li a:hover{
+	text-decoration: underline;
+}
+.nav-nlist i{
+	float: left;
+	z-index: 2;
+	display: inline-block;
+	background: url(../img/list_sprites7.png) -30px -25px;
+	display: none;
+	width: 16px;
+	height: 15px;
+	margin-top: 5px;
+	margin-left: -6px;	
+}
+.nav-nlist span{
+	float: left;
+	border-radius: 50%;
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: #E3E3E3;
+	margin-top: 7px;
+	margin-left: -4px;
+}
+.two{
+	position: fixed;
+	top: 10px;	
+}
+
+.current{
+	position: absolute;
+	bottom: 20px;
+}
+.zyx-rn{
+	margin-top: 50px;
+}
