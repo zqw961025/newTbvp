@@ -17,8 +17,18 @@
   </resultMap>
 
   <select id="getRoute" resultType="com.gxu.newTbvp.entity.Route" >
-    select * from route where route_id = 100000
+    select * from route where route_id = #{id}
   </select>
+
+    <select id="getRouteByStartAndStop" resultType="com.gxu.newTbvp.entity.Route" >
+    select * from route where route_start = #{routeStart} and route_stop = #{routeStop}
+    </select>
+
+    <select id="getRouteByTime" resultType="com.gxu.newTbvp.entity.Route" >
+    select * from route where route_time = #{routeTime}
+    </select>
+
+
 
 
 </mapper>

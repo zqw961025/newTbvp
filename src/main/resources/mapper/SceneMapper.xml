@@ -16,7 +16,7 @@
   </resultMap>
 
   <select id="getScene" resultType="com.gxu.newTbvp.entity.Scene" >
-    select * from scene where scene_id = 100000
+    select * from scene where scene_id = #{id}
   </select>
 
 

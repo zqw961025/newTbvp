@@ -130,13 +130,13 @@
 		      	 	<input type="button" name="" id="" value="" class="btn"/>		      	       	 	
 		      	</div> -->
 		      	<div class="searchInput act">	      	 
-		      	 	<input type="text" name="" id="" value="" placeholder="出发地" class="hotel" style="width: 90px" />
-		      	 	<input type="text" name="" id="" value="" placeholder="目的地" class="hotel" style="width: 90px"/>
-		      	 	<input type="text" name="" id="" value="" readonly='readonly' placeholder="选择出发日期" class="hotel time doubledate"/>
+		      	 	<input type="text" name="" id="start" value="" placeholder="出发地" class="hotel" style="width: 90px" />
+		      	 	<input type="text" name="" id="stop" value="" placeholder="目的地" class="hotel" style="width: 90px"/>
+		      	 	<input type="text" name="" id="startDay" value="" readonly='readonly' placeholder="选择出发日期" class="hotel time doubledate"/>
 		      	 	<span></span>
-		      	 	<input type="text" name="" id="" value="" readonly='readonly' placeholder="选择归来日期" class="hotel time doubledate"/>
+		      	 	<input type="text" name="" id="stopDay" value="" readonly='readonly' placeholder="选择归来日期" class="hotel time doubledate"/>
 		      	 	<!-- <span class="calendar"></span> -->
-		      	 	<input type="button" name="" id="" value="" class="btn"/>		      	       	 	
+		      	 	<input type="button" name="search" id="search" value="" class="btn"/>
 		      	</div>
 		      	<div class="searchInput">
 		      	 	<input type="text" name="" id="" value="" placeholder="我要去..." class="txt"/>
@@ -144,7 +144,7 @@
 		      	</div>
 		      	<div class="searchInput">
 		      	 	<input type="text" name="" id="" value="" placeholder="产品名称/优惠/目的地" class="txt"/>
-		      	 	<input type="button" name="" id="" value="" class="btn"/>		      	       	 	
+		      	 	<input type="button" name="" id="" value="" class="btn"/>
 		      	</div>
 		    </div>
 		    <div class="desc">
@@ -290,34 +290,34 @@
 						<ul>
 							<li class="hot-list hover">
 								<a href="#">									
-									<img src="img/wKgBs1dWg7WAYvs6AAp7WYbaJiI04.jpeg" />
+									<img id="img1" src="img/wKgBs1dWg7WAYvs6AAp7WYbaJiI04.jpeg" />
 									<div class="hotTitle">							
-										<h3 >【南宁-北海】阳光海滩、沙滩排球，你在等什么
+										<h3 id="h1" >
 										</h3>
 										<div class="price">
-											￥<strong>1449</strong><em>起</em>
+											￥<strong id="s1"></strong><em>起</em>
 										</div>	
 									</div>
 								</a>
 							</li>
 							<li class="hot-list">
 								<a href="#">
-									<img src="img/wKgBEFt0BPKAJ5f-AAGCs5zNXZA80.jpeg" />
+									<img id="img2" src="img/wKgBEFt0BPKAJ5f-AAGCs5zNXZA80.jpeg" />
 								    <div class="hotTitle">
-										<h3>【南宁-百色】领悟文化古城的魅力</h3>
+										<h3 id="h2"></h3>
 										<div class="price">
-											￥<strong>4599</strong><em>起</em>
+											￥<strong id="s2"></strong><em>起</em>
 										</div>
 									</div>
 								</a>
 							</li>
 							<li class="hot-list">
 								<a href="#">									
-									<img src="img/wKgBZ1jl2ByALGqWAAVl6wu9EVc60.jpeg"/>															
+									<img id="img3" src="img/wKgBZ1jl2ByALGqWAAVl6wu9EVc60.jpeg"/>
 									<div class="hotTitle">					
-										<h3>【南宁-桂林】桂林山水甲天下！还有什么好犹豫的</h3>
+										<h3 id="h3"></h3>
 										<div class="price">
-											￥<strong>199</strong><em>起</em>
+											￥<strong id="s3"></strong><em>起</em>
 										</div>
 									</div>	
 								</a>								
@@ -1185,6 +1185,8 @@
 		<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>  
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>  
 		<script src="js/doubleDate2.0.js"></script>
+		<script src="js/routeJs/search.js"></script>
+		<script src="js/routeJs/getTopRoute.js"></script>
 		<script>
 			$(function(){
 				$('.doubledate').kuiDate({
