@@ -8,9 +8,11 @@ import com.gxu.newTbvp.service.RouteService;
 import com.gxu.newTbvp.service.SceneService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -51,4 +53,20 @@ public class LogController {
         return map;
 
     }
+
+    @RequestMapping(value="/searchScene",method= RequestMethod.GET)
+    public Object searchScene(HttpServletRequest request, @RequestParam String sceneCity){
+        System.out.println(sceneCity);
+        List<Log> log = logService.getSceneByCity(sceneCity);
+        Map<String,List<Scene>> map = new HashMap<>();
+        List<Scene> scenes = new ArrayList<>();
+        for(int i=0;i<log.size();i++){
+            scenes.add(sceneService.getScene(Integer.parseInt(log.get(i).getProductId())));
+        }
+        map.put("scenes",scenes);
+        System.out.println(scenes);
+        return map;
+    }
+
+
 }

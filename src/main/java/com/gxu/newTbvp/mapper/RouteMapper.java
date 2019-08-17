@@ -33,4 +33,8 @@ public interface RouteMapper  {
 
     public List<Route> getRouteByTimeAndPlace(@Param("routeStart") String routeStart,@Param("routeStop") String routeStop,@Param("routeTime") String routeTime);
 
+    public List<Route> getRouteByStart(@Param("routeStart") String routeStart);
+
+    public List<Route> getRouteByStop(@Param("routeStop") String routeStop);
+
 }

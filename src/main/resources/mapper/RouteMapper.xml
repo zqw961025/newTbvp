@@ -28,7 +28,12 @@
     select * from route where route_time = #{routeTime}
     </select>
 
+  <select id="getRouteByStart" resultType="com.gxu.newTbvp.entity.Route" >
+    select * from route where route_start = #{routeStart}
+   </select>
 
-
+  <select id="getRouteByStop" resultType="com.gxu.newTbvp.entity.Route" >
+    select * from route where route_stop = #{routeStop}
+  </select>
 
 </mapper>

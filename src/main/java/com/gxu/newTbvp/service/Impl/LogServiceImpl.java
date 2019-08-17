@@ -24,4 +24,9 @@ public class LogServiceImpl implements LogService {
     @Override
     public List<Log> getTopScene(){ return logMapper.getTopScene(); }
 
+    @Override
+    public List<Log> getSceneByCity(String sceneCity){
+        return logMapper.getSceneByCity(sceneCity);
+    }
+
 }

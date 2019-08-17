@@ -7,6 +7,7 @@ import com.gxu.newTbvp.service.SceneService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service("sceneService")
 public class SceneServiceImpl implements SceneService {
@@ -18,4 +19,5 @@ public class SceneServiceImpl implements SceneService {
         return sceneMapper.getScene(id);
 
     }
+
 }

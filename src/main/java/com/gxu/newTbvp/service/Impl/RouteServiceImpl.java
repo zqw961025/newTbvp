@@ -29,4 +29,15 @@ public class RouteServiceImpl implements RouteService {
     public List<Route> getRouteByTime( String routeTime){
         return routeMapper.getRouteByTime(routeTime);
     }
+
+    @Override
+    public List<Route> getRouteByStart( String routeStart){
+        return  routeMapper.getRouteByStart(routeStart);
+    }
+
+    @Override
+    public List<Route> getRouteByStop(String routeStop){
+        return routeMapper.getRouteByStop(routeStop);
+    }
+
 }

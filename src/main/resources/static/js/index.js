@@ -102,7 +102,7 @@
 		$(this).css('background','#efefef');
 		borderNo(this);
 	})
-	console.log($('footer').offset().top)
+	// console.log($('footer').offset().top)
 	//回到顶部
 	$(window).scroll(function(){
 		var st = $(window).scrollTop();

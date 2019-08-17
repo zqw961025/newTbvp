@@ -13,4 +13,6 @@ public interface LogService {
 
     public List<Log> getTopScene();
 
+    public List<Log> getSceneByCity(String sceneCity);
+
 }

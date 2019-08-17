@@ -17,5 +17,7 @@ public interface LogMapper {
 
     public List<Log> getTopScene();
 
+    public List<Log> getSceneByCity(String sceneCity);
+
 
 }

@@ -157,19 +157,17 @@ BODY 标签选项：
                         旅行从这里开始
                     </p>
                 </div>
-                <form th:action="@{/searchResult}" method="get">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                             <div class="custom-input-group">
-                                <input type="text" class="form-control"  name="search" placeholder="输入您想查询的关键字">
-                                <button class="appsLand-btn subscribe-btn" type="submit" >开始探索</button>
+                                <input type="text" class="form-control" id="sceneCity"  name="sceneCity" placeholder="输入您想查询的城市">
+                                <button class="appsLand-btn subscribe-btn" id="searchScene" >开始探索</button>
                                 <div class="clearfix"></div>
                                 <i class="icon ion-stats-bars"></i>
                             </div>
 
                         </div>
                     </div>
-                </form>
             </div>
 
         </section>
@@ -331,76 +329,76 @@ BODY 标签选项：
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="filtr-item" style="height: 250px">
-                                            <img src="commitSystem/assets/images/gallary/g1.jpg"
+                                            <img id="img4" src="commitSystem/assets/images/gallary/g1.jpg"
                                                  alt="portfolio image">
                                             <div class="item-title">
                                                 <a >
                                                 </a>
-                                                <p>南宁动物园</p>
+                                                <p id="p4">南宁动物园</p>
                                             </div><!-- /.item-title -->
                                         </div><!-- /.filtr-item -->
                                     </div><!-- /.col -->
 
                                     <div class="col-md-6">
                                         <div class="filtr-item" style="height: 250px">
-                                            <img src="commitSystem/assets/images/gallary/g2.jpg"
+                                            <img id="img5" src="commitSystem/assets/images/gallary/g2.jpg"
                                                  alt="portfolio image">
                                             <div class="item-title">
                                                 <a >
                                                 </a>
-                                                <p>南湖公园</p>
+                                                <p id="p5">南湖公园</p>
                                             </div> <!-- /.item-title-->
                                         </div><!-- /.filtr-item -->
                                     </div><!-- /.col -->
 
                                     <div class="col-md-4">
                                         <div class="filtr-item" style="height: 530px">
-                                            <img src="commitSystem/assets/images/gallary/g3.jpg"
+                                            <img id="img6" src="commitSystem/assets/images/gallary/g3.jpg"
                                                  alt="portfolio image">
                                             <div class="item-title">
                                                 <a >
 
                                                 </a>
-                                                <p>大明山景区</p>
+                                                <p id="p6">大明山景区</p>
                                             </div><!-- /.item-title -->
                                         </div><!-- /.filtr-item -->
                                     </div><!-- /.col -->
 
                                     <div class="col-md-4" >
                                         <div class="filtr-item" style="height: 250px">
-                                            <img src="commitSystem/assets/images/gallary/g4.jpg"
+                                            <img id="img7" src="commitSystem/assets/images/gallary/g4.jpg"
                                                  alt="portfolio image">
                                             <div class="item-title">
                                                 <a >
 
                                                 </a>
-                                                <p>南宁国际会展中心</p>
+                                                <p id="p7">南宁国际会展中心</p>
                                             </div> <!-- /.item-title-->
                                         </div><!-- /.filtr-item -->
                                     </div><!-- /.col -->
 
                                     <div class="col-md-4">
                                         <div class="filtr-item" style="height: 250px">
-                                            <img src="commitSystem/assets/images/gallary/g5.jpg"
+                                            <img id="img8" src="commitSystem/assets/images/gallary/g5.jpg"
                                                  alt="portfolio image">
                                             <div class="item-title">
                                                 <a >
 
                                                 </a>
-                                                <p>七星公园</p>
+                                                <p id="p8">七星公园</p>
                                             </div> <!-- /.item-title-->
                                         </div><!-- /.filtr-item -->
                                     </div><!-- /.col -->
 
                                     <div class="col-md-8">
                                         <div class="filtr-item" style="height: 250px">
-                                            <img src="commitSystem/assets/images/gallary/g6.jpg"
+                                            <img id="img9" src="commitSystem/assets/images/gallary/g6.jpg"
                                                  alt="portfolio image">
                                             <div class="item-title">
                                                 <a >
 
                                                 </a>
-                                                <p>漓水古越</p>
+                                                <p id="p9">漓水古越</p>
                                             </div> <!-- /.item-title-->
                                         </div><!-- /.filtr-item -->
                                     </div><!-- /.col -->
@@ -540,6 +538,8 @@ BODY 标签选项：
 <script src="dist/js/adminlte.min.js"></script>
 
 <script src="js/sceneJs/getTopScene.js"></script>
+
+<script src="js/sceneJs/searchScene.js"></script>
 
 
 </body>

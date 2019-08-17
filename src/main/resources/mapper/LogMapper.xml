@@ -23,4 +23,7 @@
     SELECT * FROM (SELECT product_id,COUNT(product_id)as t1 from log WHERE product_type=1 GROUP BY product_id ) as t2 ORDER BY t2.t1 DESC LIMIT 3
   </select>
 
+  <select id="getSceneByCity" resultType="com.gxu.newTbvp.entity.Log" >
+    SELECT * FROM (SELECT product_id,COUNT(product_id)as t1 from log,scene WHERE  product_type='1' AND log.product_id=scene.scene_id and scene_city= #{sceneCity}  GROUP BY product_id ) as t2 ORDER BY t2.t1 DESC LIMIT 6
+  </select>
 </mapper>
