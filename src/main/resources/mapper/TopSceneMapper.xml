@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gxu.newTbvp.mapper.TopSceneMapper" >
+    <resultMap id="BaseResultMap" type="com.gxu.newTbvp.entity.Log" >
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="log_id" property="logId" jdbcType="INTEGER" />
+        <result column="user_id" property="userId" jdbcType="VARCHAR" />
+        <result column="product_type" property="productType" jdbcType="VARCHAR" />
+        <result column="product_id" property="productId" jdbcType="VARCHAR" />
+        <result column="product_name" property="productName" jdbcType="VARCHAR" />
+        <result column="behavior_type" property="behaviorType" jdbcType="VARCHAR" />
+        <result column="from_terminal" property="fromTerminal" jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime" jdbcType="VARCHAR" />
+    </resultMap>
+    <resultMap id="BaseResultMap1" type="com.gxu.newTbvp.entity.Scene" >
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="scene_id" property="sceneId" jdbcType="INTEGER" />
+        <result column="scene_name" property="sceneName" jdbcType="VARCHAR" />
+        <result column="scene_desc" property="sceneDesc" jdbcType="VARCHAR" />
+        <result column="scene_city" property="sceneCity" jdbcType="VARCHAR" />
+        <result column="scene_level" property="sceneLevel" jdbcType="VARCHAR" />
+        <result column="scene_price" property="scenePrice" jdbcType="VARCHAR" />
+        <result column="scene_place" property="scenePlace" jdbcType="VARCHAR" />
+        <result column="scene_img" property="sceneImg" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="getTopScene" resultType="com.gxu.newTbvp.entity.Log" >
+    SELECT * FROM (SELECT product_id,COUNT(product_id)as t1 from log WHERE product_type=1 GROUP BY product_id ) as t2 ORDER BY t2.t1 DESC LIMIT 3
+  </select>
+
+    <select id="getSceneInfo" resultType="com.gxu.newTbvp.entity.Scene" >
+   SELECT * FROM scene WHERE scene_id = #{sceneId}
+  </select>
+
+    <select id="getSearchTopScene" resultType="com.gxu.newTbvp.entity.Log" >
+        SELECT * FROM (SELECT product_id,COUNT(product_id)as t1 from log,scene WHERE  product_type='1' AND log.product_id=scene.scene_id and scene_city= #{sceneCity}  GROUP BY product_id ) as t2 ORDER BY t2.t1 DESC LIMIT 9
+  </select>
+
+    <select id="getSearchSceneInfo" resultType="com.gxu.newTbvp.entity.Scene" >
+   SELECT * FROM scene WHERE scene_id = #{sceneId}
+  </select>
+
+</mapper>
