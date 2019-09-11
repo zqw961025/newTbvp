@@ -3,7 +3,7 @@
 	padding:0px;
 }
 body{
-	background:url(../img/18.jpg) no-repeat;
+	/*background:url(../img/18.jpg) no-repeat;*/
 	background-size:cover;
 }
 .wrap{
@@ -15,15 +15,15 @@ body{
 	display: block;
 	width:74px;
 	height:65px;
-	background:url(../img/logo-new.png) no-repeat 0px 0px;
+	/*background:url(../img/logo-new.png) no-repeat 0px 0px;*/
     margin: 0 auto;
 }
-.container{	
+.container{
 	background: #fff;
 	border-radius:4px;
 	padding:35px 27px 30px;
-	box-sizing: border-box;	
-	margin-top: 24px;		
+	box-sizing: border-box;
+	margin-top: 24px;
 }
 .clearFiexd{
 	zoom:1;
@@ -36,7 +36,7 @@ body{
 .left{
 	float:left;
 	width: 350px;
-	border-right:1px solid #ccc;
+	/*border-right:1px solid #ccc;*/
 }
 .left input{
 	border:1px solid #d8d8d8;
@@ -72,7 +72,7 @@ body{
 .right{
 	float:right;
 	text-align: center;
-	
+
 }
 .right img{
 	width:180px;
@@ -87,7 +87,7 @@ p{
 	display: inline-block;
 	width: 54px;
 	color: #797979;
-	font-size: 13px;	
+	font-size: 13px;
 	text-align: center;
 	margin-right:20px;
 }
@@ -95,7 +95,7 @@ span{
 	display:inline-block;
 	height:42px;
 	width:42px;
-	background:url(../img/c_icon3.gif) no-repeat;
+	background:url(img/c_icon3.gif) no-repeat;
 	margin-top:20px;
 }
 .qq{

@@ -15,4 +15,9 @@ public class IndexController {
         return "keywords";
     }
 
+    @RequestMapping("loginIndex")
+    public String loginIndex(){
+        return "loginIndex";
+    }
+
 }

@@ -63,5 +63,10 @@ public class RouteController {
         return map;
     }
 
+    @RequestMapping(value="/recommend",method= RequestMethod.GET)
+    public Object recommend(){
+        return null;
+    }
+
 
 }
