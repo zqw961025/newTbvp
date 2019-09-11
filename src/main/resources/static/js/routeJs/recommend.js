@@ -30,28 +30,28 @@ $(document).ready(function(){
                             $("#dt5").text(dt5);
                             var dd5 = data["routes"][0].routeName;
                             $("#dd5").text(dd5);
-                            var i5 = data["routes"][0].routeTime+"日游";
+                            var i5 = data["routes"][0].routePrice+"元";
                             $("#i5").text(i5);
 
                             var dt6 = data["routes"][1].routeCitys;
                             $("#dt6").text(dt6);
                             var dd6 = data["routes"][1].routeName;
                             $("#dd6").text(dd6);
-                            var i6 = data["routes"][1].routeTime+"日游";
+                            var i6 = data["routes"][1].routePrice+"元";
                             $("#i6").text(i6);
 
                             var dt7 = data["routes"][2].routeCitys;
                             $("#dt7").text(dt7);
                             var dd7 = data["routes"][2].routeName;
                             $("#dd7").text(dd7);
-                            var i7 = data["routes"][2].routeTime+"日游";
+                            var i7 = data["routes"][2].routePrice+"元";
                             $("#i7").text(i7);
 
                             var dt8 = data["routes"][3].routeCitys;
                             $("#dt8").text(dt8);
                             var dd8 = data["routes"][3].routeName;
                             $("#dd8").text(dd8);
-                            var i8 = data["routes"][3].routeTime+"日游";
+                            var i8 = data["routes"][3].routePrice+"元";
                             $("#i8").text(i8);
                         },
                         error:function(err){
