@@ -2,20 +2,19 @@ package com.gxu.newTbvp.controller;
 
 import com.gxu.newTbvp.entity.User;
 import com.gxu.newTbvp.service.UserService;
+import com.gxu.newTbvp.utils.Encode;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
- * @author 王杨帅
+ * @author zqw
  * @create 2018-09-11 21:17
  * @desc
  **/
@@ -60,6 +59,7 @@ public class LoginController {
         System.out.println(user.getUserAge());
         if(user!=null){
             System.out.println(pwd);
+            String enPassword = Encode.str2SHA256(pwd);
             if(user.getPassword().equals(pwd)){
                 request.getSession().setAttribute("userInfo", user.getUserId());
                 info = "登录成功";

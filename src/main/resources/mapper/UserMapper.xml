@@ -17,5 +17,15 @@
     select * from user where user_name = #{userName}
   </select>
 
+  <!--查询全部用户 -->
+  <select id="getAllUser" resultMap="BaseResultMap">
+        SELECT * FROM user;
+    </select>
+
+  <!--插入新用户数据-->
+  <insert id="newUser" parameterType="com.gxu.newTbvp.entity.User">
+        INSERT INTO user(user_name, password) VALUES (#{user.userName}, #{user.password});
+    </insert>
+
 
 </mapper>

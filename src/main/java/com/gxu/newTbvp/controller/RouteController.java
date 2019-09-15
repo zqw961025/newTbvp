@@ -58,8 +58,14 @@ public class RouteController {
             }
         }
         Map<String,List<Route>> map=new HashMap<>();
-        map.put("finalRoutes",finalRoutes.subList(0,4));
         System.out.println(finalRoutes);
+        if(finalRoutes.size()==0){
+            map.put("finalRoutes",finalRoutes);
+        }
+        else {
+            map.put("finalRoutes",finalRoutes.subList(0,4));
+        }
+
         return map;
     }
 

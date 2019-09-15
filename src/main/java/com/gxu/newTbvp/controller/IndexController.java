@@ -20,4 +20,14 @@ public class IndexController {
         return "loginIndex";
     }
 
+    @RequestMapping("register")
+    public String register(){
+        return "register";
+    }
+
+    @RequestMapping("forgetPSW")
+    public String resetPSW(){
+        return "resetPSW";
+    }
+
 }
