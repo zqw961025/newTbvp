@@ -11,77 +11,23 @@
 		<link rel="stylesheet" type="text/css" href="css/hover.css"/>	
 	</head>
 	<body>
-		<!-- <header>
+		 <header>
 			<nav>
-				<div class="logo">
-					<a href="#"></a>
-				</div>
-				<ul class="nav-ul">
-					<li class="nav-li"><a href="#" class=" headerActive">首页</a></li>
-					<li class="nav-li"><a href="html/mdd.html">目的地</a></li>
-					<li class="nav-li"><a  href="html/gonglve.html">旅游攻略</a></li>
-					<li class="nav-li dropMenu">
-						<a href="html/tourist mall.html">旅行商城</a>
-						<span class='trigon'></span>
-						<div class="dropdown">
-							<ul>
-								<li>
-									<a href="html/tourist mall.html" target="_blank">自由行</a>
-									<span class="hot1">hot</span>
-								</li>
-								<li><a href="#" target="_blank">跟团游</a></li>
-								<li><a href="html/localTour.html" target="_blank">当地游</a></li>
-								<li>
-									<a href="html/ticket.html" target="_blank">国内机票</a>
-									<span class="new">new</span>
-								</li>
-								<li><a href="html/visa.html" target="_blank">签证</a></li>
-								<li><a href="html/insurance.html" target="_blank">保险</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-li"><a href="html/hotel.html">酒店</a></li>
-					<li class="nav-li society">
-						<a class="title" href="#">社区</a>
-						<span class='trigon'></span>
-						<div class="drop-menu">
-							<ul class="left-list">
-								<li>
-									<a href="#" target="_blank">问答<span class="hot1">hot</span></a>
-									
-								</li>
-								<li>
-									<a href="#" target="_blank">马蜂窝周边<span class="new">new</span></a>
-									
-								</li>
-								<li><a href="#" target="_blank">蜂首俱乐部</a></li>
-								<li><a href="#" target="_blank">结伴</a></li>
-							</ul>
-							<ul class="right-list">
-								<li><a href="#" target="_blank">小组论坛</a></li>
-								<li><a href="#" target="_blank">蜂众同城</a></li>
-								<li><a href="#" target="_blank">马蜂窝拍卖行</a></li>
-								<li><a href="#" target="_blank">道具pk</a></li>
-								<li><a href="#" target="_blank">真人兽</a></li>
-								<li><a href="#" target="_blank">道具商店</a></li>
-							</ul>
-						</div>				
-					</li>
-					<li class="nav-li"><a class="link" href='html/app.html'>app</a></li>					
-				</ul>
 				<div class="rightNav">
-					<a class="spirit sina" href="#"></a>
-					<a class="spirit qq" href="#"></a>
-					<a class="spirit wechat" href="#"></a>
 					<a class="login" href="html/login.html">登录</a>
 					<span class="line">|</span>
 					<a class="reg" href="html/reg.html">注册</a>
+					<a class="reg" href="" style="visibility: hidden">已登录</a>
 				</div>
 			</nav>
-		</header> -->
+		</header>
         <!-- 轮播图 -->
         <div class="banner">
 			<div class="pic">
+				<div class="desc">
+					<!-- <p>图片来自于<em>菲律宾</em>，此目的地共收藏了<em>522978</em>张菲律宾图片，本片由<em>锦字</em>荣誉出品</p> -->
+					<em>定制你的私人旅程——旅途，从环球国旅开始。</em>
+				</div>
 				<ul class="pic-ul">
 					<li class="img-list">
 						<a href="#"><img src="img/2.jpeg"/></a>
@@ -290,7 +236,7 @@
 						<ul>
 							<li class="hot-list hover">
 								<a href="#">									
-									<img id="img1" src="img/wKgBs1dWg7WAYvs6AAp7WYbaJiI04.jpeg" />
+									<img id="img1"  />
 									<div class="hotTitle">							
 										<h3 id="h1" >
 										</h3>
@@ -302,7 +248,7 @@
 							</li>
 							<li class="hot-list">
 								<a href="#">
-									<img id="img2" src="img/wKgBEFt0BPKAJ5f-AAGCs5zNXZA80.jpeg" />
+									<img id="img2"  />
 								    <div class="hotTitle">
 										<h3 id="h2"></h3>
 										<div class="price">
@@ -313,7 +259,7 @@
 							</li>
 							<li class="hot-list">
 								<a href="#">									
-									<img id="img3" src="img/wKgBZ1jl2ByALGqWAAVl6wu9EVc60.jpeg"/>
+									<img id="img3" />
 									<div class="hotTitle">					
 										<h3 id="h3"></h3>
 										<div class="price">
@@ -331,7 +277,7 @@
 							<a>路线组合推荐</a>
 							<!-- <span id="screenBtn"><i></i><em>筛选</em></span> -->
 						</li>
-						<!-- <li><a>最新发表</a></li> -->
+						 <li><a id="recommend">猜你喜欢</a></li>
 					</ul>
 					<!-- <div class="writeNodes">
 						<i></i>
@@ -439,18 +385,18 @@
 					<ul class="show">
 						<li>
 							<a href="#">
-								<img src="img/wKgBEFtKDmOAeJsgAAaDl-9P6-I20.jpeg" />
+								<img id="img4" src="img/wKgBEFtKDmOAeJsgAAaDl-9P6-I20.jpeg"/>
 								<div class="life">
 									<dl>
 										<dt id="dt1">【南宁-北海-防城港】————属于海的夏日香气</dt>
-										<dd id="dd1">记住 墨西哥 的理由很简单，太阳再猛烈，还是会下雨。 爱上 墨西哥 的理由很简单，吃再多卷饼，居然也没胖。 旋律与色彩交织的国度，飞过来看看吧。 （视频建议WIFI下观看） 我和春哥作为旅</dd>
+										<dd id="dd1">方特东盟神画位于南宁市青秀区青环路66号，利用科技手段运用激光多媒体、立体特效、微缩实景、真人秀演艺等表现手法，以全新的姿态将东南亚各国独特鲜明的历史文化及迷人的自然风光展现给游客。方特东盟...尧山，位于河南省鲁山县西部，地处伏牛山东段，因尧孙刘累立尧祠纪念先祖于此而得名。由于山上怪石多似人形，故俗称石人山。景区规划面积268平方公里，已经命名的景观240多处，主峰玉皇顶，海拔2153.1米...</dd>
 									</dl>
 									<div class="life-btn clearFiexd">
 										<span>
 											<i ></i>
 										</span>
 										<span id="i1">
-											<i  class="per"></i> 三日游
+											<i  class="per"></i> 3日游
 										</span>
 <!--										<span>-->
 <!--											<i class="see"></i> 3908/95-->
@@ -464,11 +410,11 @@
 						</li>
 					    <li>
 							<a href="#">
-								<img src="img/wKgBEFswq92AAenmAA52dXwa6d049.jpeg" />
+								<img id="img5" src="img/wKgBEFswq92AAenmAA52dXwa6d049.jpeg"/>
 								<div class="life">
 									<dl>
 										<dt id="dt2">【南宁-来宾-柳州-桂林】</dt>
-										<dd id="dd2">他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
+										<dd id="dd2">阿狸欢乐王国是一个国内知名漫IP打造的主题乐园，乐园分为梦之小镇、梦之城堡和冰雪世界三大展区，项目亮点：淋不湿身的秘境雨屋、2米高的玫瑰花园、梦幻有趣的童话小镇、星光游乐场、零下10℃的冰雪世界。...桂林金钟山旅游度假区，是国家AAAA级景区，地处桂林以南的“中国长寿之乡”永福县罗锦镇，北距桂林48公里，西距桂林两江国际机场46公里，距永福县城20公里，南距阳朔78公里。...</dd>
 									</dl>
 									<div class="life-btn clearFiexd">
 										<span>
@@ -489,11 +435,11 @@
 						</li>
 						<li>
 							<a href="#">
-								<img src="img/wKgBEFtitAaAYz4jABFLjDUrzI458.jpeg" />
+								<img id="img6" src="img/wKgBEFtitAaAYz4jABFLjDUrzI458.jpeg"/>
 								<div class="life">
 									<dl>
-										<dt id="dt3">【玉林-北海-钦州-防城港】——吃遍海鲜，游遍海滩</dt>
-										<dd id="dd3">他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
+										<dt id="dt3">【崇左-北海-钦州-防城港】——吃遍海鲜，游遍海滩</dt>
+										<dd id="dd3">方圆20公里的景区山清水秀，山环水绕，素有小桂林之称。这里翠竹绕岸，农舍点缀，独木桥横，稻穗摇曳，农夫荷锄，牧童戏水，风光俊朗清逸，极富南国田园气息。新明仕田园风光，距县城53公里，为国家一级景点，属...漓江，属珠江流域西江水系，为支流桂江上游河段的通称，位于广西壮族自治区东北部。传统意义上的漓江起点为桂江源头越城岭猫儿山，现代水文定义为兴安县溶江镇灵渠口，终点为平乐三江口。漓江上游河段为大溶江，下游...</dd>
 									</dl>
 									<div class="life-btn clearFiexd">
 										<span>
@@ -514,12 +460,12 @@
 						</li>
 						<li>
 							<a href="#">
-								<img src="img/wKgBEFs8FbyAAkcNACc6VMyZo-c359.png" />
+								<img id="img7" src="img/wKgBEFs8FbyAAkcNACc6VMyZo-c359.png"/>
 								<div class="life">
 									<dl>
 										<dt id="dt4">【百色-河池-柳州-桂林】——玩遍广西
 										</dt>
-										<dd id="dd4">他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
+										<dd id="dd4">靖西古龙山峡谷群景区（国家AAAA级旅游景区），全程漂游贯穿“三个峡谷三个暗河溶洞”，冬季漂游古龙山峡谷群景区更是一种亲近自然的享受，纯自然生态地下河水源，途中零距离接触118米古龙大瀑布。这是一个集...这里鲜花烂漫、湖光山色，环境优美，别样的农家作坊，漂亮的花卉果蔬、田野池塘的现代农庄，如同它的名字一般令人流连忘返第四届广西(北海)园林园艺博览会位于南珠大道交银滩大道东北角，占地面积1135亩，是城市绿心的核心组成部分，属城市规划绿地。园博园是一个以“花海丝路、绿映珠城”为主题，突出体现北海城市发展的历史与滨海...百鸟岩，位于广西巴马瑶族自治县甲篆乡烈屯西北面的漠斋山下，别名龙虎洞。因洞内燕子栖集，蝙蝠掠飞，又名百鸟洞。盘阳河自吉屯白熊洞潜入山下，形成1000多米的伏流暗河后，在此洞流出。洞口宽50米，一石壁把...</dd>
 									</dl>
 									<div class="life-btn clearFiexd">
 										<span>
@@ -742,304 +688,304 @@
 				    <ul>
 						<li>
 							<a href="html/ziyouxing.html">
-								<img src="img/wKgED1uL6YCAa6fCABX2sMZwvKQ78.jpeg" />
+								<img id="img8" />
 								<div class="life">
 									<dl>
-										<dt>迪拜，这座沙漠上的传奇或许有你未听过的故事</dt>
-										<dd>赫·穆罕默德曾经说过“没有人会记得第二名是谁”。所以这个沙漠中的城市总是在挑战着自然与人类的神经，创造出一个个世界第一，不断刷新的世界第一高楼，第一座帆船酒店等等，抓足了世人的...</dd>
+										<dt id="dt5"></dt>
+										<dd id="dd5"></dd>
 									</dl>
 									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>迪拜, by
+<!--										<span>-->
+<!--											<i id="i5"></i>-->
+<!--										</span>-->
+										<span id="i5">
+
 										</span>
-										<span>
-											<i class="per"></i>  一蟹走田涯
-										</span>
-										<span>
-											<i class="see"></i> 34589/155
-										</span>
-										<span>
-											951<i class="toop"></i>
-										</span>
+<!--										<span>-->
+<!--											<i class="see"></i> 34589/155-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											951<i class="toop"></i>-->
+<!--										</span>-->
 									</div>
 								</div>
 							</a>
 						</li>
 					    <li>
 							<a href="#">
-								<img src="img/wKgBEFs6DLCAKRMZAApjt16ROhk54.jpeg" />
+								<img id="img9" />
 								<div class="life">
 									<dl>
-										<dt>［小立立下雨板脸环球游］上九天揽月下五洋捉鳖</dt>
-										<dd>2018年05月08日，我向自己预约了这篇游记，当时我说：但愿不要晒黑。 澳洲回来一个月啦，赶紧写游记不然又又又忘记啦。 无限拖延症～～～～～～～～～写游记太痛苦，重点肚子没有货儿～～～ </dd>
+										<dt id="dt6"></dt>
+										<dd id="dd6"></dd>
 									</dl>
 									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>澳大利亚，by
+<!--										<span>-->
+<!--											<i id="i6"></i>-->
+<!--										</span>-->
+										<span id="i6">
+
 										</span>
-										<span>
-											<i class="per"></i>左小右
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											360<i class="toop"></i>
-										</span>
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											360<i class="toop"></i>-->
+<!--										</span>-->
 									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="img/wKgIC1uCNxCAUzwRAB7NJZyGrjE07.jpeg" />
+								<img id="img10" />
 								<div class="life">
 									<dl>
-										<dt>济州岛丨不小心收获一个彩色的夏日☁️</dt>
-										<dd>在 首尔 飞 济州岛 的路上，我有点懊悔！ 借着妹妹在 首尔 婚礼的机会，策划了一场夏日的 济州岛 之行。安排了2天在 首尔 ，可没待够，去 济州岛 前也没有做攻略，5天留给这座小岛好像过于奢</dd>
+										<dt id="dt7"></dt>
+										<dd id="dd7"></dd>
 									</dl>
 									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>济州岛，by
+<!--										<span>-->
+<!--											<i id="i7">3日游</i>-->
+<!--										</span>-->
+										<span id="i7">
+
 										</span>
-										<span>
-											<i class="per"></i>  帆妮儿
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											462<i class="toop"></i>
-										</span>
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											462<i class="toop"></i>-->
+<!--										</span>-->
 									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<img src="img/wKgED1uJka-AFGasAAfL025eKcs85.jpeg" />
+								<img id="img11" />
 								<div class="life">
 									<dl>
-										<dt>肯尼亞🇰🇪去一次才明白人為什麼要活的自</dt>
-										<dd>肯尼亞🇰🇪旅行Tips💋有問必答( 📌自由行or跟團 非洲 國家基礎設施落後，貧富差距大，治安不好，旅遊業沒法和發達國家比。出於對人身安全的考慮，不建議自由行！當然跟團也有風險，此次旅行</dd>
+										<dt id="dt8"></dt>
+										<dd id="dd8"></dd>
 									</dl>
 									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>肯尼亚,by
+<!--										<span>-->
+<!--											<i id="i8">1日游</i>-->
+<!--										</span>-->
+										<span id="i8">
+
 										</span>
-										<span>
-											<i class="per"></i>Miss Jaguar
-										</span>
-										<span>
-											<i class="see"></i>3908/95
-										</span>
-										<span>
-											11<i class="toop"></i>
-										</span>
+<!--										<span>-->
+<!--											<i class="see"></i>3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											11<i class="toop"></i>-->
+<!--										</span>-->
 									</div>
 								</div>
 							</a>
 						</li>
-						<li>
-							<a href="#">
-								<img src="img/wKgED1uecrCAV3ofAAjQIcaYUJE64.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>初探苏格兰 | 风笛声中的浪漫与孤寂</dt>
-										<dd>九月的大不列颠已经正式进入秋天，尤其是 约克 郡以北， 苏格兰 的风和雨频繁杂糅在一起，隐藏了蓝天，也彻底温柔了大地，大巴车平稳地行驶在世界最美公路上，每一次停车观望，错车时礼貌的</dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>苏格兰, by
-										</span>
-										<span>
-											<i class="per"></i> 闫伯群伯伯
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
-					    <li>
-							<a href="#">
-								<img src="img/wKgBEFtxCvyAX0MMABxafDp35dA69.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>【带你玩转瑞士】追梦而行，探秘仙境国度</dt>
-										<dd>【关于我的旅行愿望清单】 瑞士 ——童话般的仙境国度，我的梦想之地，一直位列旅行清单的榜首。 当揣着愿望清单，琢磨着这次旅行的目的地， 加拿大 、 冰岛 、 希腊 、 韩国 、 巴厘岛 </dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>瑞士,by
-										</span>
-										<span>
-											<i class="per"></i>  陈小厨私旅
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/wKgBEFs-NSqAIuyIAAdLa2vAkjY51.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>
-										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span class="by">
-											<i></i>濑户内海 by
-										</span>
-										<span class="by">
-											<i class="per"></i>一颗南瓜籽
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/wKgBEFsyPgGAGbsSABCgzTNHaUQ81.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>
-										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>濑户内海 by
-										</span>
-										<span>
-											<i class="per"></i> 一颗南瓜籽
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/wKgBEFtHWaWAflneAAf9kc_3bV428.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>
-										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>濑户内海 by
-										</span>
-										<span>
-											<i class="per"></i> 一颗南瓜籽
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/wKgBEFtHWaWAflneAAf9kc_3bV428.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>
-										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>濑户内海 by
-										</span>
-										<span>
-											<i class="per"></i> 一颗南瓜籽
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/wKgBZ1li7neAVQMNAAaIGeqBMLI72.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>
-										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>濑户内海 by
-										</span>
-										<span>
-											<i class="per"></i> 一颗南瓜籽
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="img/wKgBEFsnfwGAL85kAA64P9BZ2EI22.jpeg" />
-								<div class="life">
-									<dl>
-										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>
-										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>
-									</dl>
-									<div class="life-btn clearFiexd">
-										<span>
-											<i></i>濑户内海 by
-										</span>
-										<span>
-											<i class="per"></i> 一颗南瓜籽
-										</span>
-										<span>
-											<i class="see"></i> 3908/95
-										</span>
-										<span>
-											248<i class="toop"></i>
-										</span>
-									</div>
-								</div>
-							</a>
-						</li>
+<!--						<li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgED1uecrCAV3ofAAjQIcaYUJE64.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>初探苏格兰 | 风笛声中的浪漫与孤寂</dt>-->
+<!--										<dd>九月的大不列颠已经正式进入秋天，尤其是 约克 郡以北， 苏格兰 的风和雨频繁杂糅在一起，隐藏了蓝天，也彻底温柔了大地，大巴车平稳地行驶在世界最美公路上，每一次停车观望，错车时礼貌的</dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span>-->
+<!--											<i></i>苏格兰, by-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="per"></i> 闫伯群伯伯-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--					    <li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgBEFtxCvyAX0MMABxafDp35dA69.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>【带你玩转瑞士】追梦而行，探秘仙境国度</dt>-->
+<!--										<dd>【关于我的旅行愿望清单】 瑞士 ——童话般的仙境国度，我的梦想之地，一直位列旅行清单的榜首。 当揣着愿望清单，琢磨着这次旅行的目的地， 加拿大 、 冰岛 、 希腊 、 韩国 、 巴厘岛 </dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span>-->
+<!--											<i></i>瑞士,by-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="per"></i>  陈小厨私旅-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgBEFs-NSqAIuyIAAdLa2vAkjY51.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>-->
+<!--										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span class="by">-->
+<!--											<i></i>濑户内海 by-->
+<!--										</span>-->
+<!--										<span class="by">-->
+<!--											<i class="per"></i>一颗南瓜籽-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgBEFsyPgGAGbsSABCgzTNHaUQ81.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>-->
+<!--										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span>-->
+<!--											<i></i>濑户内海 by-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="per"></i> 一颗南瓜籽-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgBEFtHWaWAflneAAf9kc_3bV428.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>-->
+<!--										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span>-->
+<!--											<i></i>濑户内海 by-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="per"></i> 一颗南瓜籽-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgBEFtHWaWAflneAAf9kc_3bV428.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>-->
+<!--										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span>-->
+<!--											<i></i>濑户内海 by-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="per"></i> 一颗南瓜籽-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgBZ1li7neAVQMNAAaIGeqBMLI72.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>-->
+<!--										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span>-->
+<!--											<i></i>濑户内海 by-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="per"></i> 一颗南瓜籽-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="#">-->
+<!--								<img src="img/wKgBEFsnfwGAL85kAA64P9BZ2EI22.jpeg" />-->
+<!--								<div class="life">-->
+<!--									<dl>-->
+<!--										<dt>【后会无期】——澳大利亚 墨尔本 最美沿海公路の大洋路3日</dt>-->
+<!--										<dd>他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在</dd>-->
+<!--									</dl>-->
+<!--									<div class="life-btn clearFiexd">-->
+<!--										<span>-->
+<!--											<i></i>濑户内海 by-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="per"></i> 一颗南瓜籽-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											<i class="see"></i> 3908/95-->
+<!--										</span>-->
+<!--										<span>-->
+<!--											248<i class="toop"></i>-->
+<!--										</span>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</a>-->
+<!--						</li>-->
 					</ul>
 				</div>
 <!--				<div class="paging">-->
@@ -1187,6 +1133,7 @@
 		<script src="js/doubleDate2.0.js"></script>
 		<script src="js/routeJs/search.js"></script>
 		<script src="js/routeJs/getTopRoute.js"></script>
+		<script src="js/routeJs/recommend.js"></script>
 		<script>
 			$(function(){
 				$('.doubledate').kuiDate({

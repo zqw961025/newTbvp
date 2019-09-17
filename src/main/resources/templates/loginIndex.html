@@ -1,0 +1,100 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--	<head>-->
+<!--		<meta charset="utf-8">-->
+<!--		<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--		<title></title>-->
+<!--		<link rel="stylesheet" href="/css/login.css" />-->
+<!--	</head>-->
+<!--	<body background="img/18.jpg">-->
+<!--		<div class="wrap">-->
+<!--			<a href="/login" class="logo"></a>-->
+<!--			<div class="container clearFiexd">-->
+<!--				<div class="left">-->
+<!--					<div class="top">-->
+<!--						<input type="text" id="username" placeholder="您的邮箱/手机号/账户" />-->
+<!--						<input type="password" id="password" placeholder="您的密码" />-->
+<!--						<a href="#" class="forget">忘记密码</a>-->
+<!--						<input type="button" id="login" value="登录" class="btn" />-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="already">还没有账号?<a href="reg.html">马上注册</a></div>-->
+<!--		</div>-->
+<!--		<div class="tip">-->
+<!--			<a href="#">< 【这儿有阳光、蓝海和沙丘】BA.. > by 牧羊女Louise</a>-->
+<!--		</div>-->
+<!--		<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>-->
+<!--		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>-->
+<!--		<script src="js/routeJs/login.js"></script>-->
+<!--	</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Nixon : Widget</title>
+
+	<!-- ================= Favicon ================== -->
+	<!-- Standard -->
+	<link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+	<!-- Retina iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+	<!-- Retina iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+	<!-- Standard iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+	<!-- Standard iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+	<!-- Styles -->
+	<link href="assets/fontAwesome/css/fontawesome-all.min.css" rel="stylesheet">
+	<link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+	<link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/lib/nixon.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-primary">
+
+<div class="Nixon-login">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="login-content">
+					<div class="login-form">
+						<h4>用户登录</h4>
+<!--						<p style="color: red;" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>-->
+<!--						<form action="/loginCheck" method="post">-->
+							<div class="form-group">
+								<label>用户名</label>
+								<input id="username" n class="form-control" placeholder="用户名">
+							</div>
+							<div class="form-group">
+								<label>密码</label>
+								<input type="password" id="password"   class="form-control" placeholder="密码">
+							</div>
+							                            <div class="checkbox">
+<!--							                                <label class="pull-left">-->
+<!--							                                    <a href="/forgetPSW">忘记密码？</a>-->
+<!--							                                </label>-->
+															<label class="pull-left">
+																<a href="/register">马上注册</a>
+															</label>
+							                            </div>
+							<button type="button" id="login" class="btn btn-primary btn-flat m-b-30 m-t-30">登录</button>
+<!--						</form>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/routeJs/login.js"></script>
+
+</body>
+</html>

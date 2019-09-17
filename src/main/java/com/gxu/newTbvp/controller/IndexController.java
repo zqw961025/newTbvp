@@ -15,4 +15,19 @@ public class IndexController {
         return "keywords";
     }
 
+    @RequestMapping("loginIndex")
+    public String loginIndex(){
+        return "loginIndex";
+    }
+
+    @RequestMapping("register")
+    public String register(){
+        return "register";
+    }
+
+    @RequestMapping("forgetPSW")
+    public String resetPSW(){
+        return "resetPSW";
+    }
+
 }
