@@ -13,11 +13,16 @@
 	<body>
 		 <header>
 			<nav>
+				<ul class="nav-ul">
+					<li class="nav-li"><a href="http://localhost:8080/visitor" class=" headerActive">首页</a></li>
+					<li class="nav-li"><a href="index">路线组合</a></li>
+					<li class="nav-li"><a  href="keywords">景点推荐</a></li>
+				</ul>
 				<div class="rightNav">
-					<a class="login" href="html/login.html">登录</a>
+					<a class="login" href="/loginIndex" id="login1">登录</a>
 					<span class="line">|</span>
-					<a class="reg" href="html/reg.html">注册</a>
-					<a class="reg" href="" style="visibility: hidden">已登录</a>
+					<a class="reg" href="/register" id="register">注册</a>
+					<a id="login2" class="reg" href="" style="visibility: hidden">已登录</a>
 				</div>
 			</nav>
 		</header>

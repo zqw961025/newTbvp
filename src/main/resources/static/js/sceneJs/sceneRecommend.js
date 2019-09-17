@@ -53,6 +53,7 @@ $(document).ready(function(){
                 });
             }
             else {
+                $("#er").text("");
                 $.ajax({
                     url: "http://localhost:8080/Lfm/GetRecDataOfScene",
                     type: "GET",
